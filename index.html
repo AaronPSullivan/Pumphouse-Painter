@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="loading">
+  <head>
+    <title>Pump House Painter</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="paint.js"></script>
+    <script type="text/javascript" src="init.js"></script>	
+  </head>
+  <body>
+    <div id="colorToolbar">
+        <div>
+        	<img src="images/froyo_builder.png" id="mainLogo" alt="Froyo Builder">
+            <h1><em>Step 1:</em> Set Scene</h1>
+            <div id="backgrounds" class="colorpick">
+                <div id="bg1" class="on" ><img id="bg1Img" src="images/bg1.jpg" data-image="back1" /></div>
+                <div id="bg2" ><img id="bg2Img" src="images/bg2.jpg" data-image="back2" /></div>
+                <div id="bg3" ><img id="bg3Img" src="images/bg3.jpg" data-image="back3" /></div>
+                <div id="bg4" ><img id="bg4Img" src="images/bg4.jpg"  data-image="back4" /></div>
+            </div>
+			<div class="clearfix"></div>
+            <hr>
+            <h1><em>Step 2:</em> Pick flavor</h1>
+            <div id="flavors" class="colorpick">
+                <div id="flavor1" class="on" ><img id="flavor1Img" data-image="flavor1Lg" src="images/flavor1.jpg"  /></div>
+                <div id="flavor2" ><img id="flavor2Img" data-image="flavor2Lg" src="images/flavor2.jpg" /></div>
+                <div id="flavor3" ><img id="flavor3Img" data-image="flavor3Lg" src="images/flavor3.jpg" /></div>
+                <div id="flavor4" ><img id="flavor4Img" data-image="flavor4Lg" src="images/flavor4.jpg" /></div>
+                <div id="flavor5" ><img id="flavor5Img" data-image="flavor5Lg" src="images/flavor5.jpg" /></div>
+                <div id="flavor6" ><img id="flavor6Img" data-image="flavor6Lg" src="images/flavor6.jpg" /></div>
+                <div id="flavor7"><img id="flavor7Img" data-image="flavor7Lg"  src="images/flavor7.jpg" /></div>
+                <div id="flavor8" ><img id="flavor8Img" data-image="flavor8Lg" src="images/flavor8.jpg" /></div>
+            </div>
+            <div class="clearfix"></div>
+            <hr>
+            <h1><em>Step 3:</em> Design</h1>
+            
+            <p>Toppings</p>
+            <div id="stampsUp" class="stampBtn off">More...</div>
+            <div id="stamps">
+            	<div id="stampContainer" class="colorpick">
+                    <div id="chip" class="on"><img id="chipImg" data-scale=".8" src="images/c_chip.png"  /></div>
+                    <div id="sprinkles"><img id="sprinklesImg" data-scale="1" src="images/sprinkles.png"  /></div>
+                    <div id="strawberry"><img id="strawberryImg" data-scale="2.8" src="images/strawberry.png"  /></div>
+                    <div id="raspberry"><img id="raspberryImg" data-scale="1.6" src="images/raspberry.png"  /></div>
+                    <div id="blueberry"><img id="blueberryImg" data-scale="2.1" src="images/blueberry.png"  /></div>
+                    <div id="pbcup"><img id="pbcupImg" data-scale="1.8" src="images/pbcup.png"  /></div>
+                    <div id="walnut"><img id="walnutImg" data-scale="2" src="images/walnut.png"  /></div>
+                    <div id="almond"><img id="almondImg" data-scale="1.7" src="images/almond.png"  /></div>
+                    <div id="peanuts"><img id="peanutsImg"  data-scale="1.5" src="images/peanuts.png"  /></div>
+                    <div id="candy-green"><img id="candy-greenImg"  data-scale="1" src="images/candy-green.png"  /></div>
+                    <div id="candybue"><img id="candybueImg"  data-scale=".8"src="images/candybue.png"  /></div>
+                    <div id="candyred"><img id="candyredImg" data-scale=".75" src="images/candyred.png"  /></div>
+                    <div id="candyorange"><img id="candyorangeImg"  data-scale=".85"src="images/candyorange.png"  /></div>
+                    <div id="bear"><img id="bearImg"  data-scale="2" src="images/bear.png"  /></div>
+                    <div id="sucker"><img id="suckerImg" data-scale="3.2" data-offsetx="-.78" data-offsety="-.95" src="images/sucker.png"  /></div>
+                    <div id="syrup"><img id="syrupImg" data-scale="1.2" src="images/syrup.png"  /></div>
+                    <div id="caramel"><img id="caramelImg"  data-scale="1.2" src="images/caramel.png"  /></div>
+                    <div id="candyDot"><img id="candyDotImg"  data-scale="1.2" src="images/candyDot.png"  /></div>
+                    <div id="kiwi"><img id="kiwiImg"  data-scale="2.5" src="images/kiwi.png"  /></div>
+                    <div id="pineapple"><img id="pineappleImg"  data-scale="2.5" src="images/pineapple.png"  /></div>
+                    <div id="peep"><img id="peepImg" data-scale="6" src="images/peep.png"  /></div>
+                    <div id="doughnut"><img id="doughnutImg" data-scale="4" src="images/doughnut.png"  /></div>
+                    <div id="sugar"><img id="sugarImg" data-scale="2.5" src="images/sugar.png"  /></div>
+                    <div id="truffle"><img id="truffleImg" data-scale="2.2" src="images/truffle.png"  /></div>
+                    <div id="heart"><img id="heartImg" data-scale="1.5" src="images/heart.png"  /></div>
+                    <div id="sugarheart"><img id="sugarheartImg" data-scale="2.2" src="images/sugarheart.png"  /></div>
+                    <div id="cherry"><img id="cherryImg" data-scale="2.8" data-offsetx="-.65" data-offsety="-.65" src="images/cherry.png"  /></div>
+                    <div id="oats"><img id="oatsImg" data-scale="2.8" src="images/oats.png"  /></div>
+                    <div id="pretzel"><img id="pretzelImg" data-scale="2.8" src="images/pretzel.png"  /></div>
+                    <div id="candycorn"><img id="candycornImg" data-scale="1.8" src="images/candycorn.png"  /></div>
+                    <div id="raisins"><img id="raisinsImg" data-scale="1.6" src="images/raisins.png"  /></div>
+                    <div id="orange"><img id="orangeImg" data-scale="2.2" src="images/orange.png"  /></div>
+                    
+                    
+                    <span class="clearfix"></span>
+                 </div>
+            </div>
+            <div id="stampsDown" class="stampBtn">More...</div>
+            <div class="clearfix"></div>
+            <p id="draw">Draw</p>
+            <div id="colors" class="colorpick">
+                <div id="black"></div>
+                <div id="white"></div>
+                <div id="red"></div>
+                <div id="pink"></div>
+                <div id="yellow"></div>
+                <div id="green"></div>
+                <div id="blue" ></div>
+                <div id="purple" ></div>
+            </div>
+            <div class="clearfix"></div>
+            <hr>
+            <h1><em>Step 4:</em> Save it</h1>
+            <div id="buttons">
+                <div id="save">Save</div>
+                <div id="clearIt">Reset</div>
+            </div>
+            
+            <div class="clearfix"></div>
+         </div>
+    </div>
+      <canvas id="imageView">
+        <p id="canvasError">We're sorry, but your browser does not support the HTML5 Canvas. Try downloading the latest Chrome, Firefox, Safari, Opera or Internet Explorer browsers.</p>
+      </canvas>	
+    <div id="elements">
+     <img id="back1" src="images/back1.jpg" width="1200" height="1400">
+     <img id="back2" src="images/back2.jpg" width="1200" height="1400">
+     <img id="back3" src="images/back3.jpg" width="1200" height="1400">
+     <img id="back4" src="images/back4.jpg" width="1200" height="1400">
+     <img id="flavor1Lg" src="images/flavor1Lg.png" width="1000" height="1333">
+     <img id="flavor2Lg" src="images/flavor2Lg.png" width="1000" height="1333">
+     <img id="flavor3Lg" src="images/flavor3Lg.png" width="1000" height="1333">
+     <img id="flavor4Lg" src="images/flavor4Lg.png" width="1000" height="1333">
+     <img id="flavor5Lg" src="images/flavor5Lg.png" width="1000" height="1333">
+     <img id="flavor6Lg" src="images/flavor6Lg.png" width="1000" height="1333">
+     <img id="flavor7Lg" src="images/flavor7Lg.png" width="1000" height="1333">
+     <img id="flavor8Lg" src="images/flavor8Lg.png" width="1000" height="1333">
+     <img id="pumpLogo" src="images/pumpLogo.png" width="240" height="240">
+     <img id="froyoBuilder" src="images/froyo_builder.png" width="460" height="150">
+   </div>
+  </body>
+</html>
